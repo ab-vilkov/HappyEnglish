@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block head %}{% endblock %}
+
+{% block content %}
+        {% for l, q in result %}
+            <div>
+                <p>
+                    <cite>{{q}}</cite>
+                </p>
+                <video src={{l}} type="video/mp4" controls></video>
+            </div>
+        {% endfor %}
+{% endblock %}
